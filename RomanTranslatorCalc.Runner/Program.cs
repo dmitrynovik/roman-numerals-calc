@@ -34,7 +34,7 @@ namespace RomanNumbersCalc.Runner
         static void PrintError()
         {
             Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine("Expected input: 0 to 3000");
+            Console.WriteLine("Invalid input, expected: <roman number 1> + <roman number 2>");
         }
     }
 }
