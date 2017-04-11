@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace RomanNumbersCalc.Runner
 {
@@ -11,12 +12,17 @@ namespace RomanNumbersCalc.Runner
                 try
                 {
                     Console.ForegroundColor = ConsoleColor.Cyan;
-                    var str = Console.ReadLine();
-                    int num;
-                    if (int.TryParse(str, out num))
-                        Console.WriteLine(num.ToRomans());
-                    else
+                    var str = Console.ReadLine()?.Split('+')
+                        .Where(s => !string.IsNullOrWhiteSpace(s))
+                        .Select(s => s.Trim())
+                        .ToArray();
+
+                    if (str == null || str.Length < 2)
                         PrintError();
+                    else
+                    {
+                        Console.WriteLine(str[0].AddRoman(str[1]));
+                    }  
                 }
                 catch (Exception)
                 {
