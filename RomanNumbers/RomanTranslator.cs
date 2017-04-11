@@ -1,14 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace RomanNumbers
 {
     public static class RomanTranslator
     {
-        private static int[] _digitsInOrder = {1000, 500, 100, 50, 10, 5, 1};
+        private static readonly int[] DigitsInOrder;
          
-        static IDictionary<int, char> _charMap = new SortedDictionary<int, char>()
+        static readonly IDictionary<int, char> CharMap = new SortedDictionary<int, char>()
         {
             {1, 'I'},
             {5, 'V'},
@@ -18,6 +19,11 @@ namespace RomanNumbers
             {500, 'D'},
             {1000, 'M'},
         };
+
+        static RomanTranslator()
+        {
+            DigitsInOrder = CharMap.Keys.OrderByDescending(x => x).ToArray();
+        }
 
         public static string ToRomans(this int num)
         {
@@ -30,18 +36,25 @@ namespace RomanNumbers
 
             while (num > 0)
             {
-                foreach (var d in _digitsInOrder)
+                foreach (var d in DigitsInOrder)
                 {
-                    var result = num/d;
-                    if (result > 0)
+                    var result = num - d;
+                    if (result >= 0)
                     {
-                        buf.Append(ToRomans(result));
-                        num -= result*d;
+                        buf.Append(CharMap[d]);
+                        num -= d;
                         break;
                     }
                 }
             }
-            return buf.ToString();
+            return buf
+                .Replace("VIIII", "IX")
+                .Replace("IIII", "IV")
+                .Replace("LXXXX", "XC")
+                .Replace("XXXX", "XL")
+                .Replace("DCCCC", "CM")
+                .Replace("CCCC", "CD")
+                .ToString();
         }
     }
 }
