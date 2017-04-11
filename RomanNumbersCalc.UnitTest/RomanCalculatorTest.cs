@@ -1,9 +1,10 @@
 ﻿using NUnit.Framework;
+using RomanNumbersCalc;
 
-namespace RomanNumbers.UnitTest
+namespace RomanCalculator.UnitTest
 {
     [TestFixture]
-    public class RomanTranslatorTest
+    public class RomanCalculatorTest
     {
         [Test]
         public void When_0_Then_EmptyString()

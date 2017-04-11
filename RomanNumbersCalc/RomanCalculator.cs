@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace RomanNumbers
+namespace RomanNumbersCalc
 {
-    public static class RomanTranslator
+    public static class RomanCalculator
     {
         private static readonly int[] DigitsInOrder;
          
@@ -20,7 +20,7 @@ namespace RomanNumbers
             {1000, 'M'},
         };
 
-        static RomanTranslator()
+        static RomanCalculator()
         {
             DigitsInOrder = CharMap.Keys.OrderByDescending(x => x).ToArray();
         }

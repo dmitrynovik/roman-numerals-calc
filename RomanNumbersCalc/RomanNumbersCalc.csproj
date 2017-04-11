@@ -7,8 +7,8 @@
     <ProjectGuid>{834C9AA6-FE3A-4938-8FC8-E397A7FF1113}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>RomanNumbers</RootNamespace>
-    <AssemblyName>RomanNumbers</AssemblyName>
+    <RootNamespace>RomanNumbersCalc</RootNamespace>
+    <AssemblyName>RomanNumbersCalc</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -40,7 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="RomanTranslator.cs" />
+    <Compile Include="RomanCalculator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

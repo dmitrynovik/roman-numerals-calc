@@ -1,7 +1,6 @@
 ﻿using System;
-using RomanNumbers;
 
-namespace RomanTranslator.Runner
+namespace RomanNumbersCalc.Runner
 {
     class Program
     {

@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RomanNumbers", "RomanNumbers\RomanNumbers.csproj", "{834C9AA6-FE3A-4938-8FC8-E397A7FF1113}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RomanNumbersCalc", "RomanNumbersCalc\RomanNumbersCalc.csproj", "{834C9AA6-FE3A-4938-8FC8-E397A7FF1113}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RomanNumbers.UnitTest", "RomanNumbers.UnitTest\RomanNumbers.UnitTest.csproj", "{9EB88107-C86D-4724-9BD3-EE3C736E9256}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RomanNumbersCalc.UnitTest", "RomanNumbersCalc.UnitTest\RomanNumbersCalc.UnitTest.csproj", "{9EB88107-C86D-4724-9BD3-EE3C736E9256}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RomanTranslator.Runner", "RomanTranslator.Runner\RomanTranslator.Runner.csproj", "{09708186-3004-4362-B780-8416814A4CE1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RomanTranslatorCalc.Runner", "RomanTranslatorCalc.Runner\RomanNumbersCalc.Runner.csproj", "{09708186-3004-4362-B780-8416814A4CE1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
