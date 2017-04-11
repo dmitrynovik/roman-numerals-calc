@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RomanNumbers", "RomanNumber
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RomanNumbers.UnitTest", "RomanNumbers.UnitTest\RomanNumbers.UnitTest.csproj", "{9EB88107-C86D-4724-9BD3-EE3C736E9256}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RomanTranslator.Runner", "RomanTranslator.Runner\RomanTranslator.Runner.csproj", "{09708186-3004-4362-B780-8416814A4CE1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{9EB88107-C86D-4724-9BD3-EE3C736E9256}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9EB88107-C86D-4724-9BD3-EE3C736E9256}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9EB88107-C86D-4724-9BD3-EE3C736E9256}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09708186-3004-4362-B780-8416814A4CE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09708186-3004-4362-B780-8416814A4CE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09708186-3004-4362-B780-8416814A4CE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09708186-3004-4362-B780-8416814A4CE1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
